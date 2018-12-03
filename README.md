@@ -168,3 +168,29 @@ Using the following command in Terminal, the application will run and output "He
 ```bash
 dotnet run "Aimee"
 ```
+
+The `args` parameter can take multiple values so the code could be rewritten to the following:
+```csharp
+using System;
+
+namespace timing_code
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine($"Hello {args[0]} and {args[1]}!");
+        }
+    }
+}
+```
+
+And run as follows:
+```bash
+dotnet run "Aimee" "Terry"
+```
+
+Which would output the following:
+```
+Hello Aimee and Terry!
+```

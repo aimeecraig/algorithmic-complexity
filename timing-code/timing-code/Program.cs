@@ -6,7 +6,7 @@ namespace timing_code
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"Hello {args[0]}!");
+            Console.WriteLine($"Hello {args[0]} and {args[1]}!");
         }
     }
 }
