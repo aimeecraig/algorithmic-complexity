@@ -117,3 +117,30 @@ To return the total number of days, hours, minutes, seconds, or milliseconds, yo
 * TotalMinutes
 * TotalSeconds
 * TotalMilliseconds
+
+### Testing Function ###
+
+Using the information above I have come up with a basic method for testing code.
+
+```csharp
+using System;
+using System.Diagnostics;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Stopwatch stopWatch = Stopwatch.StartNew();
+
+        // Begin testing code
+        Console.WriteLine("Hello World!");
+        // End testing code
+
+        stopWatch.Stop();
+
+        TimeSpan ts = stopWatch.Elapsed;
+
+        Console.WriteLine(ts.TotalMilliseconds);
+    }
+}
+```
