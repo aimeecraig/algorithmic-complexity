@@ -144,3 +144,27 @@ class Program
     }
 }
 ```
+
+### Command Line Arguments ###
+
+Using the below code, I can run my application from the command line and pass in an argument to be used in the code later.
+
+```csharp
+using System;
+
+namespace timing_code
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine($"Hello {args[0]}!");
+        }
+    }
+}
+```
+
+Using the following command in Terminal, the application will run and output "Hello Aimee!"
+```bash
+dotnet run "Aimee"
+```
