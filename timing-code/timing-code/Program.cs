@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace timing_code
 {
@@ -6,7 +7,17 @@ namespace timing_code
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"Hello {args[0]} and {args[1]}!");
+            Stopwatch stopWatch = Stopwatch.StartNew();
+
+            // Begin testing code
+            Console.WriteLine("Hello World!");
+            // End testing code
+
+            stopWatch.Stop();
+
+            TimeSpan ts = stopWatch.Elapsed;
+
+            Console.WriteLine($"Ran in {ts.TotalMilliseconds} milliseconds.");
         }
     }
 }
