@@ -1,7 +1,7 @@
 # Algorithmic Complexity #
 
 ## Timing Code ##
-- [ ] Create some code that returns the time needed to execute a function.
+- [x] Create some code that returns the time needed to execute a function.
 - [ ] What if you make the array passed into the functions 10, 100, 1000, 10000 times bigger?
 - [ ] Take down the times it takes to process different size of array, and use a spreadsheet utility to plot the results into a curve (time spent over input size).
 
